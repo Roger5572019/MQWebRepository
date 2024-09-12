@@ -7,6 +7,36 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
+  .add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .add-button:active {
+    background-color: #004494;
+    transform: scale(0.95);
+  }
+  
+  .add-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+
   .header-title {
     margin: 0;
     font-size: 1.5rem;
@@ -29,35 +59,40 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }
   
   .login-button:hover {
     background-color: #0056b3;
   }
-  
-  .login-button a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+
+  section {
+    padding: 3rem 1rem;
   }
 
-  .footer {
-    background-color: #f8f9fa;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  .descripcion-proyecto h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #587c9b;
   }
   
-  .footer-content {
+  .descripcion-proyecto p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  .centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  
-  .footer-text {
-    color: #6c757d;
-    font-size: 0.9rem;
-    margin: 0;
+    padding: 2rem;
   }

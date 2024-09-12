@@ -1,11 +1,21 @@
-// src/views/About.js
-import React from 'react';
+import { useContext, useEffect } from "react";
+import HeaderApp from "../components/general/HeaderApp";
+import useAuth from "../hooks/useAuth";
 
-function About() {
-  return (
-    <div>
-    </div>
-  );
-};
+function About()
+{
+  
+  const autenticado = useAuth();
+
+  {
+    return (
+      <div>
+      <HeaderApp titulo="Curso Nuevo"/>
+      </div>
+    );
+  };
+}
+
+
 
 export default About;

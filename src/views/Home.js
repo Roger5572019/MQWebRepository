@@ -1,14 +1,13 @@
-// src/views/Home.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import HeaderApp from '../components/general/HeaderApp';
-import FooterApp from '../components/general/FooterApp';
+import React from "react";
+import { Link } from "react-router-dom";
+import HeaderApp from "../components/general/HeaderApp";
+import IndroductionPage from "../components/homeComponents/introductionPage";
 
 function Home() {
   return (
     <div>
-    <HeaderApp titulo="Inicio" />
-
+      <HeaderApp titulo="Inicio" />
+      <IndroductionPage />
     </div>
   );
 }
