@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { initialise } from "@open-ic/openchat-xframe";
-
+import "../../styles/open-chat.css"
 
 function initialiseOpenChatFrame(path, iframe) {
   return initialise(iframe, {
     targetOrigin: "https://oc.app",
+    path: path
   });
 }
 
@@ -20,14 +21,13 @@ function OpenChatFrame({ path, title }) {
         client.then((c) => c.changePath(path));
       }
     }
-  }, []);
+  }, [client, path]);
 
   return (
-    <div className="chat">
-      <div className="header">
+    <div className="chat-frame">
+      <div className="chat-header">
         <h3>{title}</h3>
       </div>
-
       <iframe ref={iframe} title="OpenChat" frameBorder="0" />
     </div>
   );

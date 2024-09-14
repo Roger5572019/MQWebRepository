@@ -52,7 +52,7 @@
     color: #007bff;
   }
   
-  .login-button {
+  .button {
     padding: 0.5rem 1rem;
     background-color: #007bff;
     border: none;
@@ -64,28 +64,8 @@
     font-weight: bold;
   }
   
-  .login-button:hover {
+  .button:hover {
     background-color: #0056b3;
-  }
-
-  section {
-    padding: 3rem 1rem;
-  }
-
-  .descripcion-proyecto h2 {
-    font-size: 1.875rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #587c9b;
-  }
-  
-  .descripcion-proyecto p {
-    font-size: 1.125rem;
-    color: #4a5568;
-    max-width: 48rem;
-    margin: 0 auto;
-    text-align: justify;
   }
 
   .centered-container {
@@ -116,8 +96,18 @@
     background-color: #ccc;
   }
   
-  .quantity-controls span {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
+  .descripcion-proyecto h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #587c9b;
+  }
+  
+  .descripcion-proyecto p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: justify;
   }

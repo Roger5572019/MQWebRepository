@@ -1,27 +1,21 @@
 import React, { useContext } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "../../styles/main.css";
 import { IdentityContext } from "../../contexts/IdentityContext";
+import OpenChatButton from "./OpenChatButton";
 
 function HeaderApp({ titulo }) {
   const { autenticado, login, logout } = useContext(IdentityContext);
   const navigate = useNavigate();
 
-  function handleLogin ()
-  {
+  function handleLogin() {
     login();
   }
 
-  function handleLogout ()
-  {
+  function handleLogout() {
     logout();
     navigate("/");
-  }
-
-  function handleOpenChat ()
-  {
-    navigate("/openchat");
   }
 
   return (
@@ -29,15 +23,10 @@ function HeaderApp({ titulo }) {
       <h1 className="header-title">
         <Link to="/"> {titulo} </Link>
       </h1>
-      <div style={{ display: 'flex', gap: '10px' }}>
-        <button 
-          className="login-button" 
-          onClick={handleOpenChat}
-        >
-          Open Chat
-        </button>
-        <button 
-          className="login-button" 
+      <div style={{ display: "flex", gap: "10px" }}>
+        <OpenChatButton />
+        <button
+          className="button"
           onClick={!autenticado ? handleLogin : handleLogout}
         >
           {autenticado ? "Log Out" : "Log In"}
