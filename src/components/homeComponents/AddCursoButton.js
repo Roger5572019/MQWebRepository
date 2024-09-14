@@ -14,7 +14,7 @@ function AddCursoButton() {
         }
         else
         {
-            alert("inicia sesión primero!");
+            alert("¡Inicia sesión primero!");
         }
     }
 

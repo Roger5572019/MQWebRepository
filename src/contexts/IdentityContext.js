@@ -30,7 +30,7 @@ export function IdentityProvider({ children }) {
     const login = async () => {
         const authClient = await AuthClient.create();
         authClient.login({
-            identityProvider: " http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/",
+            identityProvider: process.env.REACT_APP_INTERNET_COMPUTER_PROVIDER,
             onSuccess: async () => {
                 setAutenticado(true);
             },

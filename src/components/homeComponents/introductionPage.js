@@ -5,17 +5,7 @@ import GaleryItem from "./GaleryItem";
 import AddCursoButton from "./AddCursoButton";
 
 function IndroductionPage() {
-  const integrantes = [
-    {
-      nombre: "Rogelio Martínez Ramos",
-      rol: "Tecnico en Programación",
-    },
-    {
-      nombre: "Jake Junior Balderrama López",
-      rol: "Tecnico en Progración",
-    },
-  ];
-
+ 
   const info = introductionInfo;
   const infoGalery = introductionInfoGalery;
 
