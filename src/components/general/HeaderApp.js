@@ -13,6 +13,10 @@ function HeaderApp({ titulo }) {
     login();
   }
 
+  function handleMenu() {
+    navigate("/");
+  }
+
   function handleLogout() {
     logout();
     navigate("/");
@@ -21,9 +25,13 @@ function HeaderApp({ titulo }) {
   return (
     <header className="header">
       <h1 className="header-title">
-        <Link to="/"> {titulo} </Link>
+        <a> {titulo} </a>
       </h1>
-      <div style={{ display: "flex", gap: "10px" }}>
+      <div style={{ display: "flex", gap: "20px" }}>
+      <button
+          className="button"
+          onClick={handleMenu}
+        >Inicio</button>
         <OpenChatButton />
         <button
           className="button"
